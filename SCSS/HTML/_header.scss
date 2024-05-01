@@ -1,0 +1,73 @@
+@import "../Utilidades/mixin";
+@import "../Utilidades/variables";
+
+header {
+  background-color: $color-principal;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid $color-secundario;
+  width: 100%;
+  .logo__container {
+    display: flex;
+    margin-right: 20px;
+
+    img {
+      max-width: 100%;
+      height: 80px;
+      margin: 15px;
+      @include border;
+      border-radius: 100%;
+    }
+  }
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    input {
+      display: none;
+    }
+    .boton-menu-desplegable {
+      @include border;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      align-content: center;
+      margin-left: 10px;
+      color: $color-secundario;
+      &:hover {
+        background: $color-secundario;
+        color: $color-secundario-2;
+      }
+    }
+    ul {
+      display: none;
+      list-style: none;
+      li {
+        padding: 5px;
+        gap: 125px;
+        a {
+          text-decoration: none;
+          color: $color-secundario-2;
+          font-weight: 700;
+          padding: 10px;
+          font-size: larger;
+          gap: 20px;
+          &:hover {
+            color: $color-principal;
+            background-color: $color-secundario;
+            font-weight: bolder;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  #navbar-menu-input:checked ~ ul,
+  .boton-menu-desplegable {
+    display: block;
+    margin: 10px;
+  }
+}

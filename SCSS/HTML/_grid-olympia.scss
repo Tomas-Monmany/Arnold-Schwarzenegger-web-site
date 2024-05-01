@@ -1,0 +1,27 @@
+@import "../Utilidades/mixin";
+@import "../Utilidades/variables";
+
+.grid-container-olympia {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(4, auto);
+  gap: 3px;
+  margin: 10px;
+  .card {
+    margin: 5px;
+    @include border;
+    img {
+      max-width: 100%;
+      border-bottom: 2px solid #e6c07b;
+    }
+    .card-text {
+      span {
+        display: block;
+        text-align: start;
+      }
+    }
+  }
+  .item-1980 {
+    grid-column: -3/-1;
+  }
+}

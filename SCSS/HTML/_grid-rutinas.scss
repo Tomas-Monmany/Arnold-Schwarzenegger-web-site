@@ -1,0 +1,24 @@
+@import "../Utilidades/mixin";
+@import "../Utilidades/variables";
+.grid__container__rutinas {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 5px;
+  max-height: auto;
+  .card {
+    margin: 5px;
+    @include border;
+  }
+  .card-rutinas {
+    display: flex;
+    padding: 0;
+    margin: auto 8px;
+    width: 100%;
+    ol,
+    span {
+      padding: 0;
+      list-style-type: disc;
+      display: inline-block;
+    }
+  }
+}

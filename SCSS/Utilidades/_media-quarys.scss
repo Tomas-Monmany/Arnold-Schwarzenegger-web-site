@@ -1,0 +1,41 @@
+@media screen and (min-width: 700px) {
+  #navbar-menu-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: larger;
+    gap: 10px;
+  }
+  header nav .boton-menu-desplegable {
+    display: none;
+  }
+  p {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid-container-olympia {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, auto);
+    gap: 3px;
+    margin: 10px;
+  }
+  .grid-container-terminator {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 3px;
+  }
+  .grid__container__rutinas {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin: 5px;
+    max-height: auto;
+  }
+  header nav .boton-menu-desplegable {
+    display: none;
+  }
+  p {
+    font-size: x-large;
+  }
+}

@@ -1,0 +1,17 @@
+@import "./variables";
+
+@mixin border {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $color-secundario;
+}
+@mixin heading-container {
+  background-color: $color-secundario-2;
+  @include border;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  p {
+    text-align: center;
+  }
+}

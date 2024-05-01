@@ -1,0 +1,51 @@
+@import "../Utilidades/mixin";
+@import "../Utilidades/variables";
+.btn {
+  margin: 10px;
+  background-color: $color-secundario-2;
+  @include border;
+  font-weight: bolder;
+  color: $color-principal;
+  width: 70%;
+  font-size: 20px;
+  padding: 10px;
+  &:hover {
+    background-color: $color-secundario;
+    border: 2px solid $color-principal;
+  }
+}
+
+.dropdown-menu {
+  font-size: medium;
+  margin: 2px;
+  .dropdown-item:hover {
+    background-color: $color-secundario;
+    width: fit-content;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 1px;
+  }
+}
+
+.biografia__text__container {
+  color: #fff;
+  border: 2px solid #e6c07b;
+  margin: 10px;
+  h4,
+  p {
+    text-align: justify;
+    margin: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    border: 2px solid #e6c07b;
+    padding: 5px;
+    margin: 5px;
+    &:hover {
+      background-color: $color-secundario;
+    }
+  }
+}

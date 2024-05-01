@@ -1,0 +1,103 @@
+@import "Utilidades/reset";
+
+@import "Utilidades/variables";
+
+@import "Utilidades/mixin";
+
+body {
+  background-color: $color-principal;
+  font-family: Montserrat;
+}
+@import "HTML/header";
+main {
+  display: flex;
+  flex-direction: column;
+}
+#carousel__container img {
+  max-width: 100%;
+  margin: 5px;
+  opacity: 0.85;
+  @include border;
+  border-radius: 100%;
+}
+.main__heading__container {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-principal;
+  color: $color-secundario-2;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid $color-secundario;
+  border-bottom: 1px solid $color-secundario;
+  height: 15dvh;
+  max-width: 100%;
+  padding: 4px;
+}
+.paginas__container {
+  background-color: #282828;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #e6c07b;
+  margin-bottom: 10px;
+  .paginas__item__container {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    width: 100%;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: $color-secundario-2;
+    }
+    .logo-paginas {
+      max-width: 100%;
+      height: 80px;
+      @include border;
+      border-radius: 100%;
+    }
+  }
+}
+footer {
+  display: flex;
+  height: 5dvh;
+  align-content: center;
+  justify-content: space-between;
+  .redes__container {
+    display: flex;
+    .logo-redes {
+      max-width: 100%;
+      height: 25px;
+      padding: 3px;
+      border-radius: 5px;
+      background-color: $color-secundario;
+      margin: 5px;
+    }
+  }
+  .logo__footer__container {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    img {
+      height: 50px;
+      @include border;
+      border-radius: 100%;
+      margin: 5px;
+    }
+  }
+}
+#biografia__heading__container {
+  @include heading-container;
+}
+@import "HTML/biografia";
+
+.heading__container {
+  @include heading-container;
+}
+@import "HTML/grid-olympia";
+
+@import "HTML/grid-terminator";
+
+@import "HTML/grid-rutinas";
+
+@import "Utilidades/media-quarys";
