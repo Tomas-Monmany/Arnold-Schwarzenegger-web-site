@@ -6,8 +6,12 @@
     font-size: larger;
     gap: 10px;
   }
-  header nav .boton-menu-desplegable {
-    display: none;
+  header {
+    nav {
+      .boton-menu-desplegable {
+        display: none;
+      }
+    }
   }
   p {
     font-size: large;
@@ -32,8 +36,12 @@
     margin: 5px;
     max-height: auto;
   }
-  header nav .boton-menu-desplegable {
-    display: none;
+  header {
+    nav {
+      .boton-menu-desplegable {
+        display: none;
+      }
+    }
   }
   p {
     font-size: x-large;
