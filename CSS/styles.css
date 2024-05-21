@@ -252,7 +252,7 @@ footer .logo__footer__container img {
   gap: 20px;
 }
 .biografia__text__container .img__container .img-bio {
-  width: 28%;
+  max-width: 28%;
   height: auto;
   border: 2px solid #e6c07b;
   border-radius: 5px;
