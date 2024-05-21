@@ -140,6 +140,27 @@ main {
   border-radius: 100%;
 }
 
+.paginas__item__container:hover .logo-paginas {
+  animation: rotation 2s linear 0.1s infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(270deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
 footer {
   display: flex;
   height: 5dvh;
@@ -224,6 +245,17 @@ footer .logo__footer__container img {
   text-align: justify;
   margin: 10px;
 }
+.biografia__text__container .img__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+.biografia__text__container .img__container .img-bio {
+  width: 28%;
+  border: 2px solid #e6c07b;
+  border-radius: 5px;
+}
 .biografia__text__container a {
   text-decoration: none;
   color: #fff;
@@ -265,6 +297,7 @@ footer .logo__footer__container img {
 .grid-container-olympia .card img {
   max-width: 100%;
   border-bottom: 2px solid #e6c07b;
+  height: 100%;
 }
 .grid-container-olympia .card .card-text span {
   display: block;
@@ -320,6 +353,9 @@ footer .logo__footer__container img {
   list-style-type: disc;
   display: inline-block;
 }
+.grid__container__rutinas .rutinas__video__container {
+  display: none;
+}
 
 @media screen and (min-width: 700px) {
   #navbar-menu-container {
@@ -339,10 +375,15 @@ footer .logo__footer__container img {
 @media screen and (min-width: 1024px) {
   .grid-container-olympia {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, 20%);
     gap: 3px;
     margin: 10px;
+  }
+  .grid-container-olympia .item-1975 {
+    grid-column: -6/2;
+  }
+  .grid-container-olympia .item-1980 {
+    grid-column: 2/5;
   }
   .grid-container-terminator {
     display: grid;
@@ -351,9 +392,21 @@ footer .logo__footer__container img {
   }
   .grid__container__rutinas {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(3, 33%);
+  }
+  .grid__container__rutinas .rutinas__video__container {
+    display: inline-flex;
+    background-color: #e6c07b;
+    border: 2px solid #fff;
+    border-radius: 5px;
     margin: 5px;
-    max-height: auto;
+    grid-column: 2/4;
+    justify-content: center;
+  }
+  .grid__container__rutinas .rutinas__video__container .rutinas-video {
+    max-width: 100%;
+    filter: grayscale(1);
+    border-radius: 5px;
   }
   header nav .boton-menu-desplegable {
     display: none;

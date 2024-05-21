@@ -37,6 +37,17 @@
     text-align: justify;
     margin: 10px;
   }
+  .img__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    .img-bio {
+      width: 28%;
+      border: 2px solid #e6c07b;
+      border-radius: 5px;
+    }
+  }
   a {
     text-decoration: none;
     color: #fff;

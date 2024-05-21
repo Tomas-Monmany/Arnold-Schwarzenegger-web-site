@@ -34,11 +34,11 @@ main {
   padding: 4px;
 }
 .paginas__container {
-  background-color: #282828;
-  color: #fff;
+  background-color: $color-principal;
+  color: $color-secundario-2;
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 1px solid #e6c07b;
+  border-bottom: 1px solid $color-secundario;
   margin-bottom: 10px;
   .paginas__item__container {
     display: flex;
@@ -58,6 +58,7 @@ main {
     }
   }
 }
+@import "Utilidades/animaciones";
 footer {
   display: flex;
   height: 5dvh;
